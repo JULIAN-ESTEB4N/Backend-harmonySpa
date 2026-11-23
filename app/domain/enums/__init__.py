@@ -1,2 +1,2 @@
-from app.domain.enums.user_role import UserRole
+from app.domain.enums.user_role_ import UserRole
 __all__ = ["UserRole"]

@@ -16,6 +16,12 @@ class Settings(BaseSettings):
         extra="ignore",
     )
 
+    JWT_SECRET_KEY: str = Field(min_length=32)
+    JWT_ALGORITHM: str = "HS256"
+    ACCESS_TOKEN_EXPIRE_MINUTES: int = 120
+    SESSION_INACTIVITY_MINUTES: int = 30
+
+
 @lru_cache
 def get_settings() -> Settings:
     return Settings()
