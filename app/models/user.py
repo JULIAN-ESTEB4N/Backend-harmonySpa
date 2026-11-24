@@ -46,7 +46,7 @@ class User(Base):
         autoincrement=True
     )
 
-    fisrt_name: Mapped[str] = mapped_column(
+    first_name: Mapped[str] = mapped_column(
         String(100),
         nullable=False
     )
